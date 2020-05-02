@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>
+            Register here
+        </title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/styles1.css">
+        
+    </head>
+    
+    <body>
+        <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-6">
+        <h2> Register here</h2>
+        <form>
+        <div class="form-row">
+            <div class="form-group col-md-6" >
+            <input class="form-control" type="text" id=fname name="fname" placeholder="Full Name" required>
+            </div>
+            <div class="form-group col-md-6" >
+            <input class="form-control" type="text" id=email name="email" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6" >
+            <input  class="form-control" type="text" id=contact name="contact" placeholder="Mobile Number">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6" >
+            <input  class="form-control" type="text" id=houseno name="houseno" placeholder="House/Flat No.">
+            </div>
+            <div class="form-group col-md-6" >
+                <input  class="form-control" type="text" id=city name="city" placeholder="City">
+             
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6" >
+                <input  class="form-control" type="text" id=state name="state" placeholder="State">
+            
+            </div>
+            <div class="form-group col-md-6" >
+                <input  class="form-control" type="text" id=country name="country" placeholder="Country">
+            
+            </div>
+        </div>
+          <div class="form-row">
+            <div class="form-group col-md-6" >
+            <input class="form-control" type="text" id=pincode name="pincode" placeholder="pincode">
+            </div>
+          </div>
+            <br>
+            <h3>Choose your Gender</h3>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="male">
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="female">
+                <label class="form-check-label" for="inlineRadio2">Female</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="inlineRadio3" value="other" >
+                <label class="form-check-label" for="inlineRadio3">Other</label>
+              </div>
+            <br>
+            <h3>Choose your favorite color</h3>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="colorbox1" value="red">
+                <label class="form-check-label" for="colorbox1">Red</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="colorbox2" value="blue">
+                <label class="form-check-label" for="colorbox2">Blue</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="colorbox3" value="green" >
+                <label class="form-check-label" for="colorbox3">Green</label>
+            </div>
+            <br>
+            <label for="message">Message:</label>
+            <input type="text" id=msgbox name="message" height="200" width="100"><br>
+            <input type="button" class="btn btn-primary" value="Submit" id="submit" onclick="addrows()">
+            <br>    
+        </form>
+        </div>
+        <div class="col-lg-6">
+        <table class="table table-bordered" id=results>
+            <thead class=thead-dark>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Messsage</th>
+              <th>colors</th>
+            </tr>
+            <thead>
+        </table>
+        </div>
+        </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+
+</html>
